@@ -3,3 +3,5 @@
 This repository stores the Assignments Completed through the CSC 317 Course
 
 **Owned by Daniel Jose Dacumos**
+- [Assignment 3](https://Ddacu.github.io/CSC317/assignments/3/)
+- [Assignment 4](https://Ddacu.github.io/CSC317/assignments/4/)
