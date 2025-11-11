@@ -3,38 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>Daniel Jose Dacumos - JavaScript Calculator</title>
-    <link id="pagestyle" rel="stylesheet" href="styles/calculator.css">
+    <link id="pagestyle" rel="stylesheet" href="./styles/calculator.css">
 </head>
 
 <body>
     <div id="calculator"> 
         
+        <input id ="output" readonly>
         <div id="button">
-            <button onclick="">(</button>
-            <button onclick="">)</button>
-            <button onclick="">%</button>
-            <button onclick="">AC</button>
+            <button onclick="addButtonValue('()')">()</button>
+            <button onclick="addButtonValue('%')">%</button>
+            <button onclick="addButtonValue('AC')">AC</button>
+            <button onclick="addButtonValue('÷')">÷</button>
 
-            <button onclick="">7</button>
-            <button onclick="">8</button>
-            <button onclick="">9</button>
-            <button onclick="">÷</button>
+            <button onclick="addButtonValue('7')">7</button>
+            <button onclick="addButtonValue('8')">8</button>
+            <button onclick="addButtonValue('9')">9</button>
+            <button onclick="addButtonValue('×')">×</button>
+            
 
-            <button onclick="">4</button>
-            <button onclick="">5</button>
-            <button onclick="">6</button>
-            <button onclick="">×</button>
+            <button onclick="addButtonValue('4')">4</button>
+            <button onclick="addButtonValue('5')">5</button>
+            <button onclick="addButtonValue('6')">6</button>
+            <button onclick="addButtonValue('-')">-</button>
 
-            <button onclick="">1</button>
-            <button onclick="">2</button>
-            <button onclick="">3</button>
-            <button onclick="">-</button>
+            <button onclick="addButtonValue('1')">1</button>
+            <button onclick="addButtonValue('2')">2</button>
+            <button onclick="addButtonValue('3')">3</button>
+            <button onclick="addButtonValue('+')">+</button>
 
-            <button onclick="">+/-</button>
-            <button onclick="">0</button>
-            <button onclick="">=</button>
+            <button onclick="addButtonValue('+/-')">(+/-)</button>
+            <button onclick="addButtonValue('0')">0</button>
+            <button onclick="addButtonValue('=')">.</button>
+            <button onclick="addButtonValue('=')">=</button>
         </div>
     </div>
+
+    <script src="./scripts/calculator.js"></script>
 
 </body>
 
