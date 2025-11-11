@@ -16,6 +16,18 @@ h1 {
   font-size: 45px;
 }
 
+h2 {
+  display: flex;
+  background-color: #303030;
+  margin: 20px auto;
+  padding: 20px;
+  
+  align-items: center;
+  justify-content: center;
+  flex-basis: auto;
+  flex-grow: auto;
+  flex-wrap: wrap;
+}
 
 /*
 Approaching the About Me section I wanted to make it so that the Picture
@@ -32,6 +44,7 @@ picture at the top and then paragraph.
 #about {
   display: flex;
   background-color: #242424;
+  border: 2px solid #303030;
   border-radius: 20px;
   margin: 15px auto;
   width: 85%;
@@ -41,27 +54,13 @@ picture at the top and then paragraph.
   flex-basis: auto;
   flex-grow: auto;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
-
-#about h2 {
-  display: flex;
-  background-color: #1e1e1e;
-  border: 1px solid #303030;
-  border-radius: 20px;
-  
-  justify-content: center;
-  flex-grow: auto;
-  font-size: 45px;
-  padding: 15px;
-  margin: 10px;
-}
-
 
 #about-content{
   border-radius: 20px;
 
-  border: 1px solid #303030;
+  border: 2px solid #303030;
   background-color: #1e1e1e;
   width: 60%;
 
@@ -73,7 +72,7 @@ picture at the top and then paragraph.
   line-height: 1.5;
 }
 
-.profile{
+#profile-img{
   border: 1px solid #303030;
   border-radius: 50%;
   width: 10%;
@@ -81,10 +80,9 @@ picture at the top and then paragraph.
   transition: all 0.5s ease-in-out;
 }
 
-.profile:hover{
+#profile-img:hover{
   width: 20%;
 }
-
 
 /*
 Approaching the Skills Section it's using rows as it's Flex Direction
@@ -99,6 +97,7 @@ it easier to know what skill your looking at.
 #skills{
   display: flex;
   background-color: #242424;
+  border: 2px solid #303030;
   margin: 25px auto;
   
   justify-content: flex-start;
@@ -110,15 +109,6 @@ it easier to know what skill your looking at.
 
 }
 
-#skills h2 {
-  padding: 20px;
-  margin: 20px;
-
-  justify-content: left;
-  flex-grow: auto;
-  font-size: 30px;
-}
-
 .skills-content{
   border: 1px solid #303030;
   background-color: #1e1e1e;
@@ -128,7 +118,7 @@ it easier to know what skill your looking at.
 
   border-radius: 20px;
 
-  font-size: 15px;
+  font-size: 20px;
   text-align: center;
 
   line-height: 1.5;
@@ -167,12 +157,13 @@ Nevertheless, we reused the same animations from the skills, as well as
 highlighting the projects that the user is looking at for the same reason as
 the skills.
 */
-#projects {
+#proj-container {
   display: flex;
   background-color: #242424;
+  border: 2px solid #303030;
   border-radius: 20px;
 
-  margin: 10px auto;
+  margin: 20px auto;
   padding: 20px;
   width: 75%;
   
@@ -187,13 +178,7 @@ the skills.
   justify-content: center;
 }
 
-#projects h2 {
-  text-align: center;
-  flex-grow: auto;
-  font-size: 30px;
-}
-
-#projects a {
+#proj-container a {
   text-align: center;
   flex-grow: auto;
 
@@ -201,12 +186,12 @@ the skills.
   color: #1c71d8;
 }
 
-.project-content{
+.project{
   border: 1px solid #303030;
   background-color: #1e1e1e;
 
   padding: 20px;
-  margin: 10px;
+  margin: 20px;
 
   border-radius: 20px;
   width: 75%;
@@ -219,7 +204,7 @@ the skills.
     box-shadow 0.4s linear;
 }
 
-.project-content:hover{
+.project:hover{
   background-color: rgb(50,50,50);
   transform: translateY(-10px);
   box-shadow: 0 15px 25px rgba(0,0,0,0.3);
@@ -236,46 +221,62 @@ footer{
   border-radius: 20px;
 
   margin: 10px auto;
-  padding: 10px;
+  padding: 20px;
   width: 20%;
 
   flex-basis: auto;
   flex-grow: auto;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
-#contact h2{
-  flex-basis: auto;
-  flex-grow: auto;
-  flex-wrap: wrap;
-
-  justify-content: center;
-  text-align: center;
-  flex-grow: auto;
-  margin: 10px;
-
-  font-size: 20px;
+#contact-div h2 {
   color: white;
+  background-color: #242424;
+  padding: 10px;
+  margin: 10px;
 }
 
-#contact a{
-  flex-basis: auto;
-  flex-grow: auto;
-  flex-wrap: wrap;
-  
-  justify-content: center;
-  text-align: center;
-  flex-grow: auto;
+#contact-div a{
+  background-color: #1e1e1e;
+  border: 1px solid #303030;
+  color: white;
   margin: 10px;
-  font-size: 20px;
-  color: #1c71d8;
+  padding: 10px;
+  border-radius: 20px;
+
+  transition: 
+  background-color 0.6s ease,
+  box-shadow 0.4s linear;
+}
+
+#contact-div a:hover{
+  background-color: rgb(50,50,50);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.3);
 }
 
 #style-buttons{
-  margin: 15px;
+  padding: 5px;
+  margin: 5px;
   flex-grow: auto;
 }
 
+#style-buttons button {
+  background-color: #1e1e1e;
+  border: 1px solid #303030;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 20px;
 
+  transition: 
+  background-color 0.6s ease,
+  box-shadow 0.4s linear;
+}
 
+#style-buttons button:hover{
+  background-color: rgb(50,50,50);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+}

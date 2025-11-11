@@ -8,12 +8,10 @@
 
 <body>
     
-    <h1>Daniel Jose Dacumos - Portfollio</h1>
-    
-    
+    <h1>About Me</h1>
     <section id="about">
-        <h2>About Me</h2>
-        <img src="/images/picture.png" alt="Daniel Jose Dacumos" class="profile">
+        
+        
         <p id="about-content">
         My name is Daniel Jose Dacumos, I'm a Junior at San Francisco State
         University currently studying to be a Computer Science Major. I have
@@ -22,11 +20,13 @@
         creating software and websites through coding. My aspirations are to be a 
         Software Engineer or a Web Developer.
         </p>
+
+        <img src="/assignments/3/images/picture.png" alt="Daniel Jose Dacumos" id="profile-img">
         
     </section>
 
+    <h2>Skills</h2>
     <section id="skills">
-        <h2>Skills</h2>
 
         <div class="skills-content">
             <h3>Programming Languages</h3>
@@ -53,41 +53,61 @@
 
     </section>
 
-    <section id="projects">
-        <h2>Projects (Fictitious)</h2>
+    <h2>Projects</h2>
+    <section id="proj-container">
 
-        <div class="project-content">
-            <h3>Face Scanner</h3>
-            <p>Using Python I was able to create a program that is able to recognize, but also match the faces of people in order to identify their identity and who they are based off facial features.</p>
+        <div class="project">
+            <h3>C Shell</h3>
+            <p>Using C functions execvp, dup2, pipe, fork, and strtok I was able to 
+                create a working C shell that accepts linux commands shows it's output</p>
             <ul>
-                <li>Face Matching</li>
-                <li>Identification</li>
-                <li>Facial Recognition</li>
+                <li>User Input</li>
+                <li>Command Execution</li>
+                <li>Command Piping</li>
             </ul>
         </div>
 
-        <div class="project-content">            
-            <h3>Basic Chat Room</h3>
-            <p>Using the Firebase API I was able to use the cloud database to create a basic chat room. Using it we can store both chat messages and user information in real time.
-            <ul>    
-                <li>Create An Account</li>
-                <li>User Authentication</li>
-                <li>Live Chat Room</li>
+        <div class="project">            
+            <h3>Police Data Record Checker</h3>
+
+            <p> Using C I was able create a program that scans a police.dat file of 500k records 
+                that stores the time, and does the calculations to find out the 
+                min, max, mean, median, stddev, q1, and q3.
+            </p>
+
+            <ul>
+                <li>Scans 500k Records</li>
+                <li>Calculations regarding time</li>
+                <li>"Supports Multithreading"</li>
             </ul>
         </div>
 
 
     </section>
 
+    
+
 </body>
 
 <footer>
-    <div id="contact">
+    
+    
+    <div id="contact-div">
         <h2>Contact Me</h2>
-        <a href=mailto:ddacumos1@sfsu.edu>Email</a>
-        <a href="https://github.com/Ddacu/CSC317">Github Repo</a>
-        <a href="https://www.linkedin.com/in/daniel-jose-dacumos">Linkedin</a>
+        <a class="contact" href=mailto:ddacumos1@sfsu.edu>Email</a>
+        <a class="contact" href="https://github.com/Ddacu/CSC317">Github Repo</a>
+        <a class="contact" href="https://www.linkedin.com/in/daniel-jose-dacumos">Linkedin</a>
     </div>
+
+    <div id="style-buttons">
+        <button onclick="switchStyle('styles/styles.css')">Handwritten CSS</button>
+        <button onclick="switchStyle('styles/ai-1.css')">Ai Prompt 1</button>
+        <button onclick="switchStyle('styles/ai-2.css')">Ai Prompt 2</button>
+        <button onclick="switchStyle('styles/ai-3.css')">Ai Prompt 3</button>
+        <button onclick="switchStyle('styles/hybrid.css')">Hybrid CSS</button>
+        <script src="scripts/switcher.js"></script>
+    </div>
+    
 </footer>
 
 </html>
