@@ -7,36 +7,44 @@
 </head>
 
 <body>
-    <section id="calculator"> 
+    <h2>JavaScript Calculator</h2>
+    <section id="container">
+
         
-        <input id ="output" readonly>
-        <div id="button">
+
+        <a id="back-button" href="../4/index.html">Return to Assignment 4</a>
+
+        <div id="calculator"> 
             
-            <button onclick="addValue('()')">()</button>
-            <button onclick="addValue('%')">%</button>
-            <button onclick="addValue('AC')">AC</button>
-            <button onclick="addValue('÷')">÷</button>
+            <input id ="output" readonly>
+            <div id="button">
+                
+                <button id="utility" onclick="addValue('()')">()</button>
+                <button id="utility" onclick="addValue('%')">%</button>
+                <button id="utility" onclick="addValue('AC')">AC</button>
+                <button id="operator" onclick="addValue('÷')">÷</button>
 
-            <button onclick="addValue('7')">7</button>
-            <button onclick="addValue('8')">8</button>
-            <button onclick="addValue('9')">9</button>
-            <button onclick="addValue('×')">×</button>
-            
+                <button id="number" onclick="addValue('7')">7</button>
+                <button id="number" onclick="addValue('8')">8</button>
+                <button id="number" onclick="addValue('9')">9</button>
+                <button id="operator" onclick="addValue('×')">×</button>
+                
 
-            <button onclick="addValue('4')">4</button>
-            <button onclick="addValue('5')">5</button>
-            <button onclick="addValue('6')">6</button>
-            <button onclick="addValue('-')">-</button>
+                <button id="number" onclick="addValue('4')">4</button>
+                <button id="number" onclick="addValue('5')">5</button>
+                <button id="number" onclick="addValue('6')">6</button>
+                <button id="operator" onclick="addValue('-')">-</button>
 
-            <button onclick="addValue('1')">1</button>
-            <button onclick="addValue('2')">2</button>
-            <button onclick="addValue('3')">3</button>
-            <button onclick="addValue('+')">+</button>  
+                <button id="number" onclick="addValue('1')">1</button>
+                <button id="number" onclick="addValue('2')">2</button>
+                <button id="number" onclick="addValue('3')">3</button>
+                <button id="operator" onclick="addValue('+')">+</button>  
 
-            <button onclick="addValue('+/-')">(+/-)</button>
-            <button onclick="addValue('0')">0</button>
-            <button onclick="addValue('=')">.</button>
-            <button onclick="addValue('=')">=</button>
+                <button id="utility" onclick="addValue('+/-')">(+/-)</button>
+                <button id="number" onclick="addValue('0')">0</button>
+                <button id="number" onclick="addValue('=')">.</button>
+                <button id="operator" onclick="addValue('=')">=</button>
+            </div>
         </div>
     </section>
 
