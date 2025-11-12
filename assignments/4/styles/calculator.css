@@ -5,6 +5,7 @@
 
     background-color: #1e1e1e;
     border: 1px solid #404040;
+    color: white;
 
     font-size: 15px;
     border-radius: 20px;
@@ -32,12 +33,14 @@
 }
 
 #button button {
-  background-color: #272727;
   border-radius: 20px;
   color:white;
   padding: 10px 15px;
   margin: 10px;
-  
+}
+
+#number{
+  background-color: #1a1a1a;
 
   transition: 
   background-color 0.2s ease,
@@ -52,7 +55,7 @@
   box-shadow 0.4s linear;
 }
 
-#operators{
+#operator{
   background-color: orange;
 
   transition: 
@@ -68,7 +71,7 @@
 
 
 /*
-Taken from Hybrid.CSS
+Colors Taken from Hybrid.css
 */
 
 #back-button {
@@ -78,12 +81,10 @@ Taken from Hybrid.CSS
   margin: 5px;
   border-radius: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-  transform: scale(1);
 
   transition: 
   background-color 0.6s ease,
   box-shadow 0.4s linear;
-  transform: 5.4s ease;
 
 }
 #back-button:hover {
@@ -105,22 +106,22 @@ h1, h2 {
 
 #container {
   display: flex;
+  flex-direction: column;
+  flex-grow: auto;
+  align-items: center;
+  justify-content: center;
+
   background-color: #131c2b;
-  
   border-radius: 20px;
 
   margin: 20px auto;
   padding: 20px;
   max-width: 500px;
 
-  flex-direction: column;
-  flex-basis: auto;
-  flex-grow: auto;
-  flex-wrap: wrap;
+  
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 
-  align-items: center;
-  justify-content: center;
+  
 }
 
 #container h2 {
