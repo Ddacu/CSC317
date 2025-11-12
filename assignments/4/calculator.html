@@ -7,37 +7,38 @@
 </head>
 
 <body>
-    <div id="calculator"> 
+    <section id="calculator"> 
         
         <input id ="output" readonly>
         <div id="button">
-            <button onclick="addButtonValue('()')">()</button>
-            <button onclick="addButtonValue('%')">%</button>
-            <button onclick="addButtonValue('AC')">AC</button>
-            <button onclick="addButtonValue('÷')">÷</button>
+            
+            <button onclick="addValue('()')">()</button>
+            <button onclick="addValue('%')">%</button>
+            <button onclick="addValue('AC')">AC</button>
+            <button onclick="addValue('÷')">÷</button>
 
-            <button onclick="addButtonValue('7')">7</button>
-            <button onclick="addButtonValue('8')">8</button>
-            <button onclick="addButtonValue('9')">9</button>
-            <button onclick="addButtonValue('×')">×</button>
+            <button onclick="addValue('7')">7</button>
+            <button onclick="addValue('8')">8</button>
+            <button onclick="addValue('9')">9</button>
+            <button onclick="addValue('×')">×</button>
             
 
-            <button onclick="addButtonValue('4')">4</button>
-            <button onclick="addButtonValue('5')">5</button>
-            <button onclick="addButtonValue('6')">6</button>
-            <button onclick="addButtonValue('-')">-</button>
+            <button onclick="addValue('4')">4</button>
+            <button onclick="addValue('5')">5</button>
+            <button onclick="addValue('6')">6</button>
+            <button onclick="addValue('-')">-</button>
 
-            <button onclick="addButtonValue('1')">1</button>
-            <button onclick="addButtonValue('2')">2</button>
-            <button onclick="addButtonValue('3')">3</button>
-            <button onclick="addButtonValue('+')">+</button>
+            <button onclick="addValue('1')">1</button>
+            <button onclick="addValue('2')">2</button>
+            <button onclick="addValue('3')">3</button>
+            <button onclick="addValue('+')">+</button>  
 
-            <button onclick="addButtonValue('+/-')">(+/-)</button>
-            <button onclick="addButtonValue('0')">0</button>
-            <button onclick="addButtonValue('=')">.</button>
-            <button onclick="addButtonValue('=')">=</button>
+            <button onclick="addValue('+/-')">(+/-)</button>
+            <button onclick="addValue('0')">0</button>
+            <button onclick="addValue('=')">.</button>
+            <button onclick="addValue('=')">=</button>
         </div>
-    </div>
+    </section>
 
     <script src="./scripts/calculator.js"></script>
 
