@@ -28,6 +28,10 @@ body {
     line-height: 1.6;
 }
 
+button {
+
+}
+
 h1, h2 {
     color: #58a6ff;
     text-align: center;
@@ -251,19 +255,52 @@ footer a:hover::after {
 }
 
 #style-buttons button {
-  background-color: #1e1e1e;
-  border: 1px solid #303030;
+  background-color: #131c2b;
+  border: 0px solid #303030;
   color: white;
   padding: 10px;
   margin: 5px;
   border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 
   transition: 
   background-color 0.6s ease,
   box-shadow 0.4s linear;
 }
 
+#style-buttons {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: flex;
+  gap: 10px;
+}
+
 #style-buttons button:hover {
+  background: var(--accent);
+  color: #000;
+  transform: scale(1.05);
+  box-shadow: var(--shadow-glow);
+}
+
+#back-button {
+  position: fixed;
+
+  background-color: #131c2b;
+  border: 0px solid #303030;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+
+  transition: 
+  background-color 0.6s ease,
+  box-shadow 0.4s linear;
+}
+
+
+#back-button:hover {
   background: var(--accent);
   color: #000;
   transform: scale(1.05);
