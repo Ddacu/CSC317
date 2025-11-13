@@ -28,10 +28,6 @@ body {
     line-height: 1.6;
 }
 
-button {
-
-}
-
 h1, h2 {
     color: #58a6ff;
     text-align: center;
@@ -283,14 +279,21 @@ footer a:hover::after {
   box-shadow: var(--shadow-glow);
 }
 
-#back-button {
-  position: fixed;
+#back-button a {
+  display: flex;
 
+  justify-content: center;
+  align-items: center;
+}
+
+#back-button {
+  text-decoration: none;
   background-color: #131c2b;
   border: 0px solid #303030;
   color: white;
   padding: 10px;
   margin: 5px;
+  max-width: 200px;
   border-radius: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 
