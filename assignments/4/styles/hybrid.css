@@ -280,7 +280,6 @@ footer a:hover::after {
 
 /*Calculator Image Style*/
 #calculator-img {
-    flex: 1 1 30%;
     max-width: 500px;
     padding: 5px;
     border-radius: 20px;
