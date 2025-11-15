@@ -22,15 +22,17 @@ At the end it does the calculations using the eval() function and tries to catch
 any errors and will alert the user and tell them to clear with AC to try again. For
 implementing traversal buttons between the html pages I had just used href and <a>.
 
-**IMPORTANT** 
-
-## DO NOT GIVE EXTRA CREDIT FOR THE THEME SWITCHER IS FROM ASSIGNMENT 3, IT WAS CODED BY A GROUP MEMBER, SO DO NOT GIVE EXTRA CREDIT FOR IT. I DID NOT CODE THAT PART IT WAS PORTED WHEN COPYING THE DATA FROM ASSIGNMENT 3 WHEN PORTING IT TO MY GITHUB. CLARIFICATION, SO THERE'S NO ACCIDENTAL PLAGARISM ACCUSATIONS
+## IMPORTANT REGARDING THEME SWITCHER
+- If you noticed when looking at Assignment 3 to Assignment 4 it has been removed. The reasoning for this is that it was part of the Group Assignment 3. 
+- I am unsure if it would count as plagarism even though we worked on Assignment 3 as a group all three of us might be using it.
+- It has been removed, so that no issues can come from it being in the code regardless if it was part of the group assignment. 
+- The main CSS theme used is Hybrid.css.
 
 ## Any additional features or improvements you added beyond the requirements
 - Added a Home Page for all the assignments I have done throughout the course which uses the style of hybrid
 - Added Go Back Button Styles to all CSS (This is exclusive to Assignment 4)
-- Added (), which I was inspired to use after checking out my Samsung Calculator App
-- Changed Hybrid.css to use less ai for certain parts to make it more cleaner
+- Added (), which I was inspired to use after checking out my Samsung Calculator App (It doesn't fully work wit buttons unless it starts with multiple parentheses, but works fine with keyboard).
+- Changed Hybrid.css to look more clean for certain parts
 - Added Instructions for using a Keyboard, Mouse, or Touch with the Calculator
 
 ## Any challenges you faced and how you overcame them

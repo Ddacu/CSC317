@@ -43,21 +43,19 @@ function addValue(userInput) {
         if(output.value[0] != "("){
             userInput = "(";
         } else {
-            if(paraCheck == "0"){
-                userInput = "(";
-
-            } else if (paraCheck == "1"){
-                userInput = ")";
-            }
-
-            if(output.value[output.value.length - 1] == "("){
+            
+            // This checks if ParseCheck has been through and that the previous length isn't equal to the opposite to prevent
+            // when it's pushed. However, if they are detected to have the same value as the previous length it will print it again
+            if(paraCheck == "0" && output.value[output.value.length - 1] != ")" || output.value[output.value.length - 1] == "("){
                 paraCheck = "1";
                 userInput = "(";
-            } else if(output.value[output.value.length - 1] == ")"){
+
+            } else if (paraCheck == "1" && output.value[output.value.length - 1] != "(" || output.value[output.value.length - 1] == ")"){
                 paraCheck = "0";
-                userInput = ")"; 
+                userInput = ")";
             }
         }
+
         output.value += userInput;
         return;
 

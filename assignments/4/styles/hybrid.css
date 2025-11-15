@@ -4,7 +4,6 @@
   --glass: rgba(255,255,255,0.05);
   --border: rgba(255,255,255,0.08);
   --main: #e8ecf3;
-  --sub: #c5c9d6;
   --accent: #4cc9f0;
   --accent-soft: #4361ee;
   --accent-blue: #7ad7f0;   /* for h1 + primary elements */
@@ -215,8 +214,8 @@ h1, h2 {
 
 /* Footer styles from AI-3 */
 footer {
-  background: rgba(15,15,30,0.9);
-  color: var(--sub);
+  background: #131c2b;
+  color: #c5c9d6;
   text-align: center;
   padding: 1.5em 0;
   margin-top: 50px;
@@ -252,33 +251,6 @@ footer a:hover::after {
   transform-origin: left;
 }
 
-/* Switcher buttons from AI-1 */
-#style-buttons {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  display: flex;
-  gap: 10px;
-}
-
-#style-buttons button {
-  background: var(--bg-card);
-  border: none;
-  color: var(--text-primary);
-  padding: 10px 14px;
-  border-radius: 12px;
-  cursor: pointer;
-  box-shadow: var(--shadow-soft);
-  transition: all var(--transition-speed);
-}
-
-#style-buttons button:hover {
-  background: var(--accent);
-  color: #000;
-  transform: scale(1.05);
-  box-shadow: var(--shadow-glow);
-}
-
 /*Added Code For Assignment 4*/
 #back-button {
   display: flex;
@@ -304,4 +276,19 @@ footer a:hover::after {
 #back-button:hover {
   transform: translateY(-5px) scale(1.03);
   background: rgba(108,217,255,0.08);
+}
+
+/*Calculator Image*/
+#calculator-img {
+    flex: 1 1 30%;
+    max-width: 250px;
+    padding: 5px;
+    border-radius: 50%;
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    transition: all 0.4s ease;
+}
+
+#calculator-img:hover {
+    transform: scale(1.08);
 }
