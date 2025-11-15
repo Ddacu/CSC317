@@ -123,15 +123,14 @@ h1, h2 {
   background: var(--bg-card);
   padding: 12px 20px;
   border-radius: 30px;
-  color: var(--text-primary);
-  box-shadow: var(--shadow-soft);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease;
 }
 
 .skills-content ul li:hover {
   transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 0 35px var(--glow);
-  background: linear-gradient(145deg, rgba(108,217,255,0.08), rgba(44, 63, 122, 0.08));
+  background: rgba(108,217,255,0.08);
 }
 
 /* Project Section from Handwritten CSS width modifications*/
@@ -163,14 +162,6 @@ h1, h2 {
   font-size: 30px;
 }
 
-.project a {
-  color: var(--accent-purple);
-  font-weight: 700;
-  text-decoration: none;
-  font-size: 1.05rem;
-  transition: var(--transition);
-}
-
 .project{
   border: 1px solid #18202f;
 
@@ -184,20 +175,32 @@ h1, h2 {
   font-size: 15px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     
+  transition: all 0.4s ease
+}
 
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.project a {
+  color: white;
+  padding: 10px;
+
+  border: 1px solid #18202f;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 16px;
 }
 
 .project a:hover {
-  color: var(--accent-blue);
+  color: rgba(47, 176, 199, 0.76);
   text-shadow: 0 0 10px rgba(28, 38, 67, 0.6);
+  transform: scale(1.05);
 }
 
 
 .project:hover {
   transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 0 35px var(--glow);
-  background: linear-gradient(145deg, rgba(108,217,255,0.08), rgba(44, 63, 122, 0.08));
+  background: rgba(108,217,255,0.08);
 }
 
 
@@ -273,15 +276,13 @@ footer a:hover::after {
 }
 
 #style-buttons button:hover {
-  background: var(--accent);
+  background: rgba(108,217,255,0.08);
   color: #000;
   transform: scale(1.05);
-  box-shadow: var(--shadow-glow);
 }
 
 #back-button a {
   display: flex;
-
   justify-content: center;
   align-items: center;
 }
@@ -297,15 +298,11 @@ footer a:hover::after {
   border-radius: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 
-  transition: 
-  background-color 0.6s ease,
-  box-shadow 0.4s linear;
+  transition: all 0.2s ease;
 }
 
 
 #back-button:hover {
-  background: var(--accent);
-  color: #000;
-  transform: scale(1.05);
-  box-shadow: var(--shadow-glow);
+  transform: translateY(-10px) scale(1.03);
+  background: rgba(108,217,255,0.08);
 }

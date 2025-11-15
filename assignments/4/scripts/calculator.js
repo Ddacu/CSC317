@@ -1,7 +1,7 @@
-const output = document.getElementById("output");
 let values;
-let paraCheck = ")";
+let paraCheck = "0";
 let plusMinus = "+";
+const output = document.getElementById("output");
 
 function addValue(input) {
 
@@ -21,22 +21,31 @@ function addValue(input) {
     // on first run and pressing the button, it will start with ( and the
     // paraCheck tracks it, so that each time it can swap between them.
     // However, it also check if the previous ( is the same one
+
+    // Note: This wasn't in instructions, but I added it because of the 
+    // Samsung Calculator which I used for inspiration for what it should
+    // look and act like.
     if (input == "()"){
-        
-        if(paraCheck == ")"){
-            paraCheck = "(";
+
+        if(paraCheck == "0"){
             input = "(";
 
-        } else if (paraCheck == "("){
-            paraCheck = ")";
+        } else if (paraCheck == "1"){
             input = ")";
         }
 
         if(output.value[output.value.length - 1] == "("){
+            paraCheck = "1";
             input = "(";
-
         } else if(output.value[output.value.length - 1] == ")"){
+            paraCheck = "0";
             input = ")"; 
+        }
+
+        // If the first button pressed is the parantheses it start with
+        // "("
+        if(output.value[0] != "("){
+            input = "(";
         }
 
     }
@@ -70,6 +79,7 @@ function addValue(input) {
     if(input == "="){
         try {
             output.value = eval(output.value);
+            output.value = "Result: " + output.value;
         } catch (error) {
             output.value = "Invalid (Press AC)"; 
         }
