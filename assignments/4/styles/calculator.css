@@ -1,3 +1,9 @@
+#display{
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 0px;
+}
+
 #calculator {
     display: flex;
     flex-direction: column;
@@ -103,7 +109,7 @@ body {
   color: #e4e9f2;
 }
 
-#container {
+.container {
   display: flex;
   flex-direction: column;
   flex-grow: auto;
@@ -120,12 +126,11 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
-#container h2 {
+.container h1, h2 {
   color: #58a6ff;
   text-align: center;
   letter-spacing: 1px;
 
   text-align: center;
   flex-grow: auto;
-  font-size: 30px;
 }

@@ -7,45 +7,71 @@
 </head>
 
 <body>
+
+    <div id="display">
     
-    <section id="container">
-        <h2>JavaScript Calculator</h2>
+        <section class="container">
+            <h1>JavaScript Calculator</h1>
 
-        <a id="back-button" href="../4/index.html">Return to Assignment 4</a>
+            <a id="back-button" href="../4/index.html">Back to Portfolio</a>
 
-        <div id="calculator"> 
-            
-            <input id="output" readonly>
-            <div id="button">
+            <div id="calculator"> 
                 
-                <button class="utility" onclick="addValue('()')">()</button>
-                <button class="utility" onclick="addValue('%')">%</button>
-                <button class="utility" onclick="addValue('AC')">AC</button>
-                <button class="operator" onclick="addValue('÷')">÷</button>
+                <input id="output" readonly>
+                <div id="button">
+                    
+                    <button class="utility" onclick="addValue('()')">()</button>
+                    <button class="utility" onclick="addValue('%')">%</button>
+                    <button class="utility" onclick="addValue('AC')">AC</button>
+                    <button class="operator" onclick="addValue('÷')">÷</button>
 
-                <button class="number" onclick="addValue('7')">7</button>
-                <button class="number" onclick="addValue('8')">8</button>
-                <button class="number" onclick="addValue('9')">9</button>
-                <button class="operator" onclick="addValue('×')">×</button>
-                
+                    <button class="number" onclick="addValue('7')">7</button>
+                    <button class="number" onclick="addValue('8')">8</button>
+                    <button class="number" onclick="addValue('9')">9</button>
+                    <button class="operator" onclick="addValue('×')">×</button>
+                    
 
-                <button class="number" onclick="addValue('4')">4</button>
-                <button class="number" onclick="addValue('5')">5</button>
-                <button class="number" onclick="addValue('6')">6</button>
-                <button class="operator" onclick="addValue('-')">-</button>
+                    <button class="number" onclick="addValue('4')">4</button>
+                    <button class="number" onclick="addValue('5')">5</button>
+                    <button class="number" onclick="addValue('6')">6</button>
+                    <button class="operator" onclick="addValue('-')">-</button>
 
-                <button class="number" onclick="addValue('1')">1</button>
-                <button class="number" onclick="addValue('2')">2</button>
-                <button class="number" onclick="addValue('3')">3</button>
-                <button class="operator" onclick="addValue('+')">+</button>  
+                    <button class="number" onclick="addValue('1')">1</button>
+                    <button class="number" onclick="addValue('2')">2</button>
+                    <button class="number" onclick="addValue('3')">3</button>
+                    <button class="operator" onclick="addValue('+')">+</button>  
 
-                <button class="utility" onclick="addValue('+/-')">(+/-)</button>
-                <button class="number" onclick="addValue('0')">0</button>
-                <button class="number" onclick="addValue('=')">.</button>
-                <button class="operator" onclick="addValue('=')">=</button>
+                    <button class="utility" onclick="addValue('+/-')">(+/-)</button>
+                    <button class="number" onclick="addValue('0')">0</button>
+                    <button class="number" onclick="addValue('=')">.</button>
+                    <button class="operator" onclick="addValue('=')">=</button>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section class="container">
+            <h1>Instructions Guide</h1>
+            
+            <h2>Mouse Use / Touch Screen</h2>
+
+            <ul>
+                <li><p>Press The Buttons On The Calculator Directly</p></li>
+            </ul>
+            
+            <h2>Keyboard Use</h2>
+
+            <ul>
+                <li><p>Press Backspace to Clear Output (AC)</p></li>
+                <li><p>Press * for Multiplication ×</p></li>
+                <li><p>Press / for Division ÷</p></li>
+                <li><p>Press "(" or ")" for Parentheses</p></li>
+                <li><p>Press % for  Modulo</p></li>
+                <li><p>Press any Number for you want to Calculate</p></li>
+            </ul>
+
+        </section>
+
+    </div>
 
     <script src="./scripts/calculator.js"></script>
 
