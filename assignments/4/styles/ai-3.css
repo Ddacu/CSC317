@@ -189,3 +189,30 @@ footer a:hover::after {
 @media (max-width: 800px) {
   .project { display: block; margin: 20px auto; width: 90%; }
 }
+
+/*Added Just so it can be used NOT ORIGINALLY FROM AI from Assignment 3 */
+#back-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+  background-color: rgba(255,255,255,0.05);
+  border: 0px solid #303030;
+  color: white;
+  
+  padding: 10px;
+  margin: 5px;
+
+  max-width: 200px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+
+  transition: all 0.2s ease;
+}
+
+
+#back-button:hover {
+  transform: translateY(-10px) scale(1.03);
+  background: rgba(255, 255, 255, 0.144);
+}

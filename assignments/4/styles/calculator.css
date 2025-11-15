@@ -103,12 +103,6 @@ body {
   color: #e4e9f2;
 }
 
-h1 {
-  color: #58a6ff;
-  text-align: center;
-  letter-spacing: 1px;
-}
-
 #container {
   display: flex;
   flex-direction: column;
@@ -127,6 +121,10 @@ h1 {
 }
 
 #container h2 {
+  color: #58a6ff;
+  text-align: center;
+  letter-spacing: 1px;
+
   text-align: center;
   flex-grow: auto;
   font-size: 30px;

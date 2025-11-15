@@ -59,14 +59,14 @@ h1, h2 {
 #profile-img {
     flex: 1 1 30%;
     max-width: 250px;
-    padding: 10px;
+    padding: 5px;
     border-radius: 50%;
-    box-shadow: 0 0 20px rgba(88, 166, 255, 0.2);
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     transition: all 0.4s ease;
 }
 #profile-img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 35px rgba(88, 166, 255, 0.6);
+    transform: scale(1.08);
 }
 
 /* Skills section from AI-1 with modifications */
@@ -78,7 +78,7 @@ h1, h2 {
 
 #skills h2 {
   font-size: 2rem;
-  color: var(--accent-soft);
+  color: #4361ee;
   margin-bottom: 100px;
   text-shadow: 0 0 8px rgba(76, 201, 240, 0.2);
   animation: fadeInUp 1s ease;
@@ -281,19 +281,19 @@ footer a:hover::after {
   transform: scale(1.05);
 }
 
-#back-button a {
+#back-button {
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-#back-button {
   text-decoration: none;
   background-color: #131c2b;
   border: 0px solid #303030;
   color: white;
+  
   padding: 10px;
   margin: 5px;
+
   max-width: 200px;
   border-radius: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
