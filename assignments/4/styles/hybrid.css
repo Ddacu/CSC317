@@ -278,12 +278,12 @@ footer a:hover::after {
   background: rgba(108,217,255,0.08);
 }
 
-/*Calculator Image*/
+/*Calculator Image Style*/
 #calculator-img {
     flex: 1 1 30%;
-    max-width: 250px;
+    max-width: 500px;
     padding: 5px;
-    border-radius: 50%;
+    border-radius: 20px;
 
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     transition: all 0.4s ease;
